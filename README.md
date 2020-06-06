@@ -1,25 +1,17 @@
-Hi! This is the BroccoliBot
+Hi! This is the BroccoliBot that I made for the LGBT server that I moderate. It's intended purpose is to assist with moderation
 
-Required packages: request
+Current Features: 
+	-Removes inactive users from the server, both with and without roles, who have not been active in 1-30 days
+	-Protects users with a role from being kicked 
+	-Displays the numbner of members who would be pruned. 
 
-Install Instructions:
-once you pull the code you're gunna need to make 3 json files 
-config.json
-roles.json
-protected_roles.json
+When you install it you need to create 3 JSON files 
+	-roles.json  -> {}
+	-protected_roles.json -> {}
+	-config.json -> {"prefix":"<your desired command prefix>","token": "<bot token from discord developer site>"}
 
-in the latter 2 just open them and type {} then save
-in config you need to add 2 fields:
+I will give you my bot token if I know and trust you but under no circumstances must this be shared. 
 
-{
-	"prefix": "!",
-	"token": "<bot token goes here>"
-}
+To run the bot, navigate to the directory in command prompt and run "node index.js". You should see "Ready!" when the bot has launched 
 
-if you want to self host the bot then you can create one on the discord developer site:
-https://discord.com/developers/applications
-
-if you know me and think I'd trust you then I'll give you mine
-to run: navigate to the directory in command prompt and type "node index.js"
-
-cya
+If you have any feature requests then raise an issue. 
