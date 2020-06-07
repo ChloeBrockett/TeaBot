@@ -1,6 +1,7 @@
 const fs = require('fs');
 module.exports = {
 	name: 'get_roles',
+	modOnly: true,
 	description: 'Collects all the roles for the server. Modify this with !protect_Roles to protect these roles from being pruned. Run this if new roles may have been added since the last prune',
 	execute(message, args) {
 		let roleMap=new Map();

@@ -3,7 +3,8 @@ const fs = require('fs');
 const { prefix, token } = require('../config.json');
 
 module.exports = {
-	name: 'do_kick',
+  name: 'do_kick',
+  modOnly: true,
 	description: 'Kicks all the members of the server with a subset of unprotected roles who have not been active in (1-30) days. Requires the use of !get_roles before use.',
 	execute(message, args) {
 

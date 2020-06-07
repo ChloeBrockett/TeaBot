@@ -3,6 +3,7 @@ module.exports = {
 	name: 'remove_protected',
     description: 'Removes a role from the list of protected roles.',
     args: true,
+    mod: true,
     usage: "<role string>",
 	execute(message, args) {
         var protectedFileName='protected_roles.json';

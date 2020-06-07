@@ -3,6 +3,7 @@ module.exports = {
 	name: 'protect_role',
     description: 'Protects a role from being pruned. Strongly recomend to protect all staff roles and bot roles',
     args: true,
+    modOnly: true,
     usage: "<role string>",
 	execute(message, args) {
         var rolesFileName = 'roles.json';

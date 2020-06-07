@@ -1,5 +1,6 @@
 module.exports = {
-	name: 'do_kick_unverified',
+    name: 'do_kick_unverified',
+    modOnly: true,
 	description: 'Returns how many inactive members without rules will be pruned for (1-30) days. Functionally identicle to discords built in prune feature, but more granular',
 	execute(message, args) {
         //by default, the number of days should be 7

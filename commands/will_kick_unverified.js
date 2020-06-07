@@ -1,5 +1,6 @@
 module.exports = {
-	name: 'will_kick_unverified',
+    name: 'will_kick_unverified',
+    modOnly: true,
 	description: 'Returns how many members will be pruned from the server for (1-30)) number of days. Does not count people with any roles.',
 	execute(message, args) {
         //by default, the number of days should be 7

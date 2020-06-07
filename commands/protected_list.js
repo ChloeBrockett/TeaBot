@@ -1,7 +1,8 @@
 const fs = require('fs');
 module.exports = {
 	name: 'protected_list',
-	description: 'Lists the protected roles.',
+    description: 'Lists the protected roles.',
+    modOnly: true,
 	execute(message, args) {
         var protectedFileName='protected_roles.json';
         var protectedRoles=JSON.parse(fs.readFileSync(protectedFileName));
